@@ -1,0 +1,34 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": false,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "strictPropertyInitialization": false,
+    "noImplicitAny": false,
+    "strictFunctionTypes": false,
+    "strictNullChecks": false,
+    "noPropertyAccessFromIndexSignature": false,
+    "suppressImplicitAnyIndexErrors": false,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "noUnusedParameters": false,
+    "paths": {
+      "@bot/api/*": ["apps/api/src/app/*"],
+      "@bot/shared/*": ["libs/shared/src/*"],
+      "@bot/web/*": ["apps/web/src/app/*"]
+    }
+  },
+  "include": ["./libs/*/src/**/*", "./apps/*/src/**/*"],
+  "exclude": ["node_modules", "tmp"]
+}
